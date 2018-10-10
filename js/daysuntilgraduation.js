@@ -1,5 +1,5 @@
 // Must be manually updated for new academic years.
-const gradDateString = '2017-05-19';
+const gradDateString = '2019-05-11';
 
 const gradDateMoment = moment(gradDateString, 'YYYY-MM-DD');
 
@@ -19,5 +19,5 @@ if (daysUntilGrad > 0) {
   document.getElementById('graduation').innerHTML = `Graduation ${gradDateMoment.format('YYYY')} is <strong>today</strong>!`;
 } else {
   // Graduation already happened!
-  document.getElementById('graduation').innerHTML = 'Oops! This site hasn\'t been updated for the new academic term.<br>Help other students out by <a href="https://github.com/corbanmailloux/RITWeek">making a pull request</a>!';
+  // document.getElementById('graduation').innerHTML = 'Oops! This site hasn\'t been updated for the new academic term.<br>Help other students out by <a href="https://github.com/corbanmailloux/RITWeek">making a pull request</a>!';
 }

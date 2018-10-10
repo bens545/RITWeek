@@ -1,37 +1,61 @@
----
-custom_js:
-- moment.min.js
-- whatweekisit.js
-- daysuntilgraduation.js
----
-<div class="jumbotron">
-    <div class="container">
-        <noscript>
-            <div class="alert alert-danger" role="alert">
-                <strong>Uh oh!</strong> JavaScript is disabled or not supported. This site won't work. Go away!
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What week is it at RIT</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ site.baseurl | prepend: site.url }}">What week is it?!</a>
             </div>
-        </noscript>
-        <h1>
-            <span id="currently">It is currently week <strong><span id="weekNum">...</span></strong></span> at <span class="rit-logo">RIT</span>.
-        </h1>
-        <p class="text-danger" id="broken" style="display: none;">
-            Email Corban Mailloux (whatweekisitatRIT@corb.co) to make me fix it.
-        </p>
-        <p>
-            <strong>Note:</strong> This value updates on <strong>Mondays</strong>, and is not guaranteed to be accurate.
-        </p>
-        <p>
-            <small>Please don't be mad at me.</small>
-        </p>
-        <p>
-            <span id="graduation">There are <strong><span id="daysUntilGraduation">...</span></strong> days until graduation, <strong><span id="gradDate">...</span></strong>!</span>
-        </p>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <noscript>
+                <div class="alert alert-danger" role="alert">
+                    <strong>Uh oh!</strong> JavaScript is disabled or not supported. This site won't work. Go away!
+                </div>
+            </noscript>
+            <h1>
+                <span id="currently">It is currently week <strong><span id="weekNum">...</span></strong></span> at <span class="rit-logo">RIT</span>.
+            </h1>
+            <p class="text-danger" id="broken" style="display: none;">
+                Email Ben Shaner (ben@benshaner.com) to make me fix it.
+            </p>
+            <p>
+                <strong>Note:</strong> This value updates on <strong>Mondays</strong>, and is not guaranteed to be accurate.
+            </p>
+            <p>
+                <small>Please don't be mad at me.</small>
+            </p>
+            <p>
+                <span id="graduation">There are <strong><span id="daysUntilGraduation">...</span></strong> days until graduation, <strong><span id="gradDate">...</span></strong>!</span>
+            </p>
+        </div>
     </div>
-</div>
 
-<p id="youVisited">
-    You've visited this site <strong><span id="timesVisited">0</span></strong> time<span id="timesPlural"></span> this academic week.
-</p>
-<p>
-    <em id="quote"></em>
-</p>
+    <p id="youVisited">
+        You've visited this site <strong><span id="timesVisited">0</span></strong> time<span id="timesPlural"></span> this academic week.
+    </p>
+    <p>
+        <em id="quote"></em>
+    </p>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center text-footer">Made in 2018 by Ben Shaner - Based off Corban Mailloux</p>
+        </div>
+    </footer>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/whatweekisit.js"></script>
+    <script src="js/daysuntilgraduation.js"></script>
+</body>
+</html>

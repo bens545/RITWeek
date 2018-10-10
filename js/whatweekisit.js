@@ -67,11 +67,11 @@ if (!storageAvailable("localStorage")) {
 // Time for the real stuff...
 
 // Set up the dates
-var fallStartDate = moment("2016-08-22");
+var fallStartDate = moment("2018-08-27");
 var interTigerStartDate = moment("2017-01-03"); // Intersession TigerTerm
-var springStartDate = moment("2017-01-23");
-var springBreakMonday = moment("2017-03-13");
-var summerTigerStartDate = moment("2016-05-31"); // Summer TigerTerm (10-week) (from 2015-2016 calendar)
+var springStartDate = moment("2019-01-23");
+var springBreakMonday = moment("2017903-11");
+var summerTigerStartDate = moment("2019-05-16"); // Summer TigerTerm (10-week) (from 2015-2016 calendar)
 
 // Build weeks
 var weeks = [];
