@@ -1,3 +1,4 @@
+import ./moment.min.js;
 // Must be manually updated for new academic years.
 const gradDateString = '2019-05-11';
 
