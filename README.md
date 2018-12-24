@@ -36,7 +36,7 @@ npm run build
 
 ## Credits
 
-Thanks to Corbin Malloux for creating `what-week`.  It's what this project is based off of, and original inspiration for
+Thanks to Corbin Mailloux for creating `what-week`.  It's what this project is based off of, and original inspiration for
 the application.
 
 ## Liscense
