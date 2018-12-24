@@ -57,7 +57,7 @@ function isBreakWeek(){
 
 function isFinalsWeek(){
     let week = getWeek();
-    return week === 16;
+    return week === 15;
 }
 
 export {
