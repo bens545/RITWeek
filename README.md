@@ -9,7 +9,7 @@ read week.
 As a student at RIT I sometimes needed to kee track of what week it was, fortunately the institute provides no easy way
 to figure this out.  I also wanted to give Vue.js a shot, so this project was commissioned.
 
-##Tech Used
+## Tech Used
 
 - Vue.js
 - Moment.js
